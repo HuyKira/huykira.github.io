@@ -46,13 +46,7 @@
 				</div>
 			</nav>
 			<div class="container content">
-				<h1>Blog Huy Kira</h1>
-				<div class="text-center" v-if="is_load"><img src="load.gif" class="load"></div>
-				<div class="load-content">
-					{{message}}
-					<itempost v-for="(item, index) in dataList" :key="index" :data="item"> </itempost>
-					<button @click="getPost">Get post</button>
-				</div>
+				<router-view></router-view>
 			</div>
 		</div>
 		<script src="dist/build.js"></script>
