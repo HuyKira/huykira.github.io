@@ -50,6 +50,7 @@
 				<div class="text-center" v-if="is_load"><img src="load.gif" class="load"></div>
 				<div class="load-content">
 					{{message}}
+					<itempost v-for="(item, index) in dataList" :key="index" :data="item"> </itempost>
 					<button @click="getPost">Get post</button>
 				</div>
 			</div>
