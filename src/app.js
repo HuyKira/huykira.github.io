@@ -5,7 +5,7 @@ import Detail from "./page/Detail.vue"
 Vue.use(Router)
 
 const router = new Router({
-  mode: 'history',
+  //mode: 'history',
   routes: [
     {path : '/',  name: 'home', component: Home},
     {path : '/:slug',  name: 'detail', component: Detail}

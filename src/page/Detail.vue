@@ -43,7 +43,9 @@
         return new moment(dates).format("DD - MM - YYYY");
       },
       autoBr(data){
-        return autop(data);
+        if(data){
+          return autop(data);
+        }
       },
     }
   }
